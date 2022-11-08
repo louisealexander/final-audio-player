@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Player </title>
+    <link rel="stylesheet" href="css/simple-player.css" />
+    <script src="js/simple-player.js" defer>
+    </script>
+</head>
+
+<body>
+
+    <div id="row">
+        <!-- creates four individual columns optimised for desktop -->
+        <div id="col1" class="column">
+            <img class="flex-image" src="images\UnknownMortalOrchestra.jpg" onclick="changeAudio()" />
+        </div>
+        <div id="col2" class="column">
+            <img class="flex-image" src="images/stevelacy.jpg" onclick="changeAudio1()" />
+        </div>
+        <div id="col3" class="column">
+            <img class="flex-image" src="images/laurynhill.jpg" onclick="changeAudio2()" />
+        </div>
+
+        <!-- creates a division for the play/pause function, audio slider-->
+        <div id="container">
+            <!-- the play button  -->
+            <img id="play-pause-button" src="images/play.svg">
+            <!-- the current time and total time division -->
+            <h4 id="current-time">0:00</h4>
+            <h4 id="time-divider">/</h4>
+            <h4 id="total-time">0:00</h4>
+            <input id="seek-bar" class="slider" type="range" min="0" value="0" disabled />
+            <!-- creates a volume slider within the play/pause container -->
+            <div id="volumeContainer">
+                <!-- sets the volume slider to have a range between 0 and 100 -->
+                <input type="range" id="volumeSlider" max="100" value="100">
+            </div>
+        </div>
+        <!-- a division for the song title and artist name -->
+        <div id="track-info">
+            <h3 id="title" class="fade">Hunnybee</h3>
+            <h4 id="artist" class="fade">Unknown Mortal Orchestra</h4>
+        </div>
+    </div>
+
+</body>
+</html>
