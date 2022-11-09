@@ -1,0 +1,156 @@
+body{
+    /* sets the width to automatically fit the screen dimensions */
+    width: auto;
+    /* sets the height to automatically fit the screen dimensions */
+    height: auto;
+    background-color: #f5a165;
+    /* aligns the divs and containers within the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    /*makes it so the user can't select the text */
+    user-select: none;
+    padding-bottom: 3px;
+}
+#row{
+    margin: auto;
+    width: auto;
+}
+#container{
+    margin: auto;
+    /* sets the width to fit 100% of the parent div */
+    width: 100%;
+    height: 50px;
+    background-color: #f46309;
+    border-radius: 15px;
+    /* aligns the divs and containers within the container div */
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+.flex-image{
+    /* tells the browser to account for any border and padding in the values you specify for an element's width and height */
+    box-sizing: border-box;
+    /* aligns images next to eachother in the respective row */
+    float: left;
+    border-radius: 25px;
+    width: 33.3333333333%;
+    padding: 5px;
+    /* makes the scale transformation smoother */
+    transition: transform 0.2s;
+}
+.flex-image:hover{
+    /* makes the image smaller when hovered over */
+   transform: scale(95%);
+}
+#play-pause-button{
+    width: 20px;
+    height: 20px;
+    /* makes the cursor a pointer as an indicator when it is hovered over or used */
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#current-time{
+    width: 45px;
+    padding-left: 5px;
+}
+#time-divider{
+    padding-left: 10px;
+}
+#total-time{
+    width: 45px;
+    padding-left: 10px;
+}
+#seek-bar{
+    width: 75%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.slider {
+    /* Override default CSS styles */
+    -webkit-appearance: none; 
+    appearance: none;
+    /* Full-width */
+    width: 100%;
+    height: 25px; 
+    border-radius: 7px;
+    background-color: white; 
+    outline: none;
+    /* Set transparency (for mouse-over effects on hover) */ 
+    opacity: 0.7; 
+    /* 0.2 seconds transition on hover */
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+  }
+.slider:hover{
+    /* when the slider hovered over the opacity changes */
+    opacity: 0.85;
+}
+/* styles the interative slider icon */
+.slider::-webkit-slider-thumb{
+    /* removes all presets for the slider style */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    /* makes the slider icon have rounded corners */
+    border-radius: 7px;
+    background:#34050b;
+    /* makes the cursor a pointer as an indicator when it is hovered over or used */
+    cursor: pointer;
+}
+#audio_player{
+    width: 100%;
+}
+.volumeSliderClass{
+    /* removes all presets for the slider style */
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 4px;
+    background: #34050b;
+}
+.volumeSliderClass::-webkit-slider-thumb{
+    /* removes all presets for the slider style */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    /* makes the volume slider icon completely round */
+    border-radius: 25px;
+    background: white;
+    /* makes the cursor a pointer as an indicator when it is hovered over or used */
+    cursor: pointer;
+}
+#title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #34050b;
+    /* aligns the text within the container */
+    vertical-align: top;
+    text-align: center;
+}
+#artist{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #34050b;
+    /* aligns the text within the container */
+    vertical-align: top;
+    text-align: center;
+}
+#track-info{
+    margin: auto;
+    background-color: #f46309;
+    width: 30%;
+    border-radius: 15px;
+    /* aligns the divs and containers within the container div */
+    display: block flex;
+    align-items: center;
+    justify-content: center;
+}
